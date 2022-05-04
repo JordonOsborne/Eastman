@@ -1,2 +1,2 @@
 # Eastman
-Redacted Eastman files for use on [JOsborne.dev](JOsborne.dev/MyWork)
+Redacted Eastman files for use on [JOsborne.dev](https://www.JOsborne.dev/MyWork)
