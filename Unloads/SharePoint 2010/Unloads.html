@@ -1,0 +1,130 @@
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"
+></script>
+<!-- ========================================================================== -->
+<!-- COPIED SCRIPT FROM SOURCE ON INTERNET -->
+<script type="text/javascript" src="/HillBillyTabs-4.js"></script>
+<!-- I create my own version of this 'Tabs' webpart later in 2019, but never got around to implementing it in this project. -->
+<!-- ========================================================================== -->
+<script type="text/javascript" src="/Main.js"></script>
+<link rel="stylesheet" href="/Style.css" />
+<style>
+  .ms-vh,
+  .ms-vh2,
+  .ms-vh-icon,
+  .ms-vh2-nofilter-icon,
+  .ms-viewheadertr .ms-vh-group,
+  .ms-vh2-nograd,
+  .ms-vh3-nograd,
+  .ms-vh2-nograd-icon,
+  .ms-ph,
+  .ms-pickerresultheadertr,
+  .ms-vh,
+  .ms-vh2,
+  .ms-vh-icon,
+  .ms-vh-icon-empty,
+  .ms-vh2-nofilter,
+  .ms-vh2-nofilter-notextalign,
+  .ms-vh2-nofilter-perm,
+  .ms-vhImage,
+  .ms-vh2-nograd,
+  .ms-vh3-nograd,
+  .ms-vh2-nograd-icon,
+  .ms-vh2-nofilter-icon,
+  .ms-ph {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+  }
+  /* CORE NAV BAR REMOVAL */
+  .ms-core-navigation {
+    display: none;
+  }
+  #s4-titlerow {
+    padding: 0;
+  }
+  #contentRow {
+    min-height: 83.5vh;
+  }
+  /* SIDE NAV BAR REMOVAL */
+  .s4-ca {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  #sideNavBox {
+    display: none;
+  }
+  #contentBox {
+    margin: 10px 10vh;
+    background: white;
+    min-height: 80vh;
+    border-radius: 3px;
+  }
+  /* CONTENT PADDING AND STYLING */
+  #s4-titlerow {
+    background: white;
+  }
+  #s4-bodyContainer {
+    background: #333;
+    padding-bottom: 10px;
+    min-width: 1675px;
+  }
+  .Warning {
+    background: lightgoldenrodyellow;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #tabsContainer {
+    display: none;
+  }
+</style>
+
+<div id="Menu">
+  <h3 class="Warning">
+    A new version of this application is available. Starting January 1st you
+    will no longer be able to use this version. You may use the new version by
+    selecting the following link:
+    <a href="RESTRICTED/Lists/Unloads/All.aspx"
+      >RESTRICTED/Lists/Unloads/All.aspx</a
+    ><br /><br />Note: For best performance on the new version open the link in
+    Edge or Chrome.
+  </h3>
+  <!-- <div class="Container">
+    <a
+      class="DEFAULT"
+      href="/SitePages/M&SS%20Unloads.aspx"
+      style="background: white"
+    >
+      <img
+        src="/SiteAssets/Icons/Pending.png"
+        alt="Pending"
+        class="small-icon"
+      />
+    </a>
+    <a
+      class="NEW"
+      href="#"
+      onclick="NewUnload('/Lists/MSS%20Log%20Sheets/NewForm.aspx?ContentTypeId=0x010072EE19EBAC8CA64093A3E9E3465E8DED');"
+    >
+      New Unload
+    </a>
+  </div> -->
+  <div id="tabsContainer"></div>
+</div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    // This example places all web parts in the same zone into tabs
+    $().HillbillyTabs();
+  });
+</script>

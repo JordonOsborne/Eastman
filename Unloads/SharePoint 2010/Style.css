@@ -1,0 +1,173 @@
+/* FOCUS STATE REMOVAL FOR CHROME */
+*:focus {
+  outline: none;
+}
+:root {
+  --hover: rgba(153, 153, 153, 0.4);
+  --light-color: rgb(18, 130, 175);
+  --dark-color: rgb(18, 105, 175);
+  --submit-color: rgb(130, 175, 18);
+}
+
+/* SHAREPOINT PAGE STYLING  */
+.ms-fullWidth {
+  /*Page Content*/
+  font-size: 1rem;
+}
+#contentRow {
+  /*Page Content NOT including Header*/
+  margin: 0 5px;
+  padding-top: 0;
+}
+.ms-webpartzone-cell {
+  /*Individual WebParts on Page*/
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--light-color);
+}
+.ms-csrlistview-controldiv {
+  padding-bottom: 0;
+}
+
+/* REMOVE UNNECESSARY SPACING FROM WEBPARTS */
+.ms-webpartPage-root {
+  border-spacing: 0;
+  background: white;
+}
+.ms-webpart-chrome-title {
+  display: none;
+}
+/* ==========================================================================
+TABS STYLING
+========================================================================== */
+/* .Menu{
+  max-width:80vw;
+} */
+#tabsContainer {
+  display: flex;
+  margin: 0.5rem 0 0 0;
+  border-bottom: #298cb8 2px solid;
+  width: 100%;
+}
+.Tabs {
+  padding: 0.25rem 3rem;
+  text-align: center;
+  min-width: 10rem;
+  cursor: pointer;
+  color: #262626;
+  background: none;
+}
+.NotSelected {
+  color: #262626;
+  background: none;
+}
+.Selected {
+  color: white;
+  background: #298cb8;
+}
+.Tabs:hover {
+  color: white;
+  background: rgb(51, 51, 51);
+}
+.Selected:hover {
+  background: #298cb8;
+}
+
+/* ==========================================================================
+CUSTOM HTML STYLING
+========================================================================== */
+.Container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.Container:last-child {
+  border-bottom: 2px solid rgb(18, 105, 175);
+}
+.Container div {
+  text-align: center;
+  flex: 1;
+}
+.Container div div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+.icon {
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: -2px 0px 10px #222;
+}
+.icon:hover {
+  box-shadow: -5px 5px 10px #222;
+}
+.small-icon {
+  height: 30px;
+  margin-right: 5px;
+}
+.Container h2,
+.Container h3 {
+  text-transform: uppercase;
+  color: rgb(18, 130, 175);
+}
+.NEW,
+.DEFAULT,
+.NAV {
+  margin-right: 5px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(130, 175, 18);
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+.DEFAULT {
+  background: rgb(18, 105, 175);
+}
+.NAV {
+  background: white;
+  color: black !important;
+  font-weight: normal;
+  text-align: center;
+  flex: 1;
+}
+.NEW:hover {
+  background: rgba(130, 175, 18, 0.8);
+}
+.DEFAULT:hover {
+  background: rgb(18, 130, 175);
+}
+.NAV:hover {
+  border-radius: 0;
+  border-bottom: 2px solid rgb(18, 130, 175);
+}
+.Page {
+  text-transform: uppercase;
+  text-align: center;
+}
+/* SEARCH BOX CORRECTION AND ADDITIONAL STYLING */
+.ms-InlineSearch-DivBaseline {
+  padding-left: 10px;
+  border-radius: 0 0 5px 5px;
+  background: #666;
+}
+.ms-InlineSearch-DivBaseline::before {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin: 10px 5px;
+}
+.ms-InlineSearch-Outline-Baseline {
+  padding: 2px 0px 5px 5px;
+  margin: 3px 0;
+  background: white;
+}
