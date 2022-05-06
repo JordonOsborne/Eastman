@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.ms-rtestate-field p,
+p.ms-rteElement-P {
+  margin: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+header {
+  padding: 0.5rem;
+  background: #444;
+  display: flex;
+  align-items: center;
+}
+header img {
+  height: 2rem;
+}
+header h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+#InvCounted {
+  display: none;
+  text-transform: uppercase;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+#DateEntered,
+#TimeEntered {
+  height: auto;
+  width: 110px;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background: #fff;
+}
+#DateEntered {
+  width: 150px;
+}
+#DateEntered::-webkit-clear-button,
+#TimeEntered::-webkit-clear-button {
+  display: none;
+}
+#Submit,
+#SendTotes,
+#ReceiveTotes {
+  margin-right: 2rem;
+  padding: 0.5rem;
+  width: auto;
+}
+#Today {
+  margin: 0.5rem 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+#View,
+#View h3 {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#View,
+#ToteCount,
+.TitleRow {
+  display: flex;
+}
+#View,
+section div {
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+#Options {
+  padding: 0 2.5%;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Options div {
+  display: flex;
+  align-items: center;
+}
+#Options select {
+  width: auto;
+}
+#PrintOptions,
+#PrintBlank,
+#Print,
+#Save {
+  margin: 0;
+  width: auto;
+  background: none;
+  color: #444;
+  border: none;
+}
+i {
+  padding: 0.25rem;
+}
+#PZ div,
+#AOX div {
+  justify-content: center;
+  margin: 0;
+}
+#Filters div,
+#SampleBottles div {
+  text-align: center;
+  padding: 0 0.25rem;
+}
+#ToteCount {
+  width: 60%;
+  margin: auto;
+}
+.Contact {
+  padding: 0.25rem 0;
+  color: #888;
+}
+section div h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#View h3 {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+#View h3:hover {
+  color: #0072c6;
+  font-weight: normal;
+}
+#Selected,
+#Selected:hover,
+.Selected,
+.Selected:hover {
+  color: #0072c6;
+  font-weight: bold !important;
+}
+section {
+  width: 90%;
+  margin: auto;
+}
+#TitleRow {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+section h2 {
+  margin: 1rem 0;
+  color: inherit !important;
+  text-align: left;
+  font-weight: bold;
+}
+section h2 input[type="button"] {
+  cursor: pointer;
+  background: none;
+  color: #0072c6;
+  min-width: auto;
+  width: 2rem;
+  border-radius: 5px;
+  border: 2px solid #0072c6;
+  margin-left: 1rem;
+  padding: 0.25rem 0;
+}
+section h2 input[type="button"]:hover {
+  background: none;
+}
+section table {
+  width: 100%;
+  border-spacing: 0;
+}
+section table tr {
+  text-align: center;
+}
+section table th {
+  padding: 0.5rem 0;
+  border-bottom: 4px solid black;
+  color: #444;
+}
+section table tr:nth-child(even) {
+  background: #fff;
+  color: #444;
+}
+section table tr:nth-child(odd) {
+  background: #999;
+  color: #fff;
+}
+section table tr:first-child {
+  background: none;
+}
+section table tr td {
+  text-transform: uppercase;
+}
+td:last-child {
+  text-transform: none;
+}
+#Tote td:nth-child(5) div,
+#ToteWithSupplier td:nth-child(5) div {
+  display: block;
+  text-align: center;
+}
+#Tote th:last-child,
+#ToteWithSupplier th:last-child {
+  width: 5%;
+}
+#Tote td:nth-child(5),
+#ToteWithSupplier td:nth-child(5) {
+  text-transform: uppercase;
+}
+#ToteWithSupplier td {
+  padding: 0.25rem 0 0.5rem;
+}
+section td a,
+section td a:visited,
+section td a:hover {
+  color: inherit;
+}
+section td a:hover {
+  text-decoration: underline;
+}
+.small-cell {
+  width: 10%;
+}
+.large-cell {
+  width: 20%;
+}
+.hide-overflow {
+  max-width: 99%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Sent {
+  position: relative;
+}
+.Sent::after {
+  position: absolute;
+  right: 20%;
+  content: " \2713";
+  color: green;
+  font-size: 1.5rem;
+}
+input {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  background: none;
+  color: inherit;
+}
+input[type="number"]:invalid {
+  background: rgba(175, 13, 18, 0.2);
+}
+.Bulk input {
+  font-weight: bold;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  border: none;
+}
+input[type="button"],
+button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background: #0072c6;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#SendTotes,
+#ReceiveTotes {
+  margin: 0;
+  width: 200px;
+  color: #fff;
+  background: #0072c6;
+}
+input[type="button"]:hover,
+button:hover,
+#SendTotes:hover,
+#ReceiveTotes:hover {
+  background: rgba(18, 105, 175, 0.8);
+}
+select {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  color: inherit;
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+  -webkit-appearance: none;
+}
+select option {
+  color: #444;
+}
+.Link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Bulk td {
+  font-weight: bold;
+  background: #444;
+  color: #fff;
+}
+.LowInv {
+  background: rgba(175, 13, 18, 0.8) !important;
+  color: #fff;
+}
+#ToteCount .CheckInv {
+  color: #ffd500;
+}
+#ToteCount .LowInv {
+  background: none !important;
+  color: rgb(175, 13, 18);
+}
+.Add,
+.Remove {
+  background: rgba(18, 105, 175, 0.4) !important;
+  color: green !important;
+}
+.Remove {
+  color: red !important;
+}
+/*=======================================================================
+PRINT VIEW STYLING
+=======================================================================*/
+@media print {
+  /* REMOVE SOME SHAREPOINT ICONS TO CONDENSE PAGE */
+  #s4-titlerow,
+  #s4-ribbonrow {
+    display: none !important;
+  }
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  #InvCounted {
+    display: inline-block;
+  }
+  #DateEntered,
+  #TimeEntered {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-weight: bold;
+    width: auto;
+  }
+  #PZ h2,
+  #AOX h2,
+  #Filters h2,
+  #SampleBottles h2,
+  #BlockedStock h2 {
+    break-before: page;
+    page-break-before: always;
+  }
+  section {
+    width: 99%;
+    break-inside: avoid;
+  }
+  section div {
+    padding-left: 0.5rem;
+  }
+  #Today {
+    display: none;
+  }
+  section td,
+  .Bulk td,
+  table td:last-child div {
+    background: #fff;
+    color: black;
+  }
+  section td {
+    border: 1px solid;
+  }
+  table th:nth-child(2) {
+    text-align: left;
+  }
+  #View,
+  #Options,
+  input[type="button"],
+  button,
+  select,
+  section th,
+  section td,
+  .Contact {
+    display: none;
+  }
+  section th:nth-child(1),
+  section th:nth-child(2),
+  section td:nth-child(1),
+  section td:nth-child(2),
+  #PZ th:nth-child(3),
+  #PZ td:nth-child(3),
+  #PZ th:nth-child(5),
+  #PZ td:nth-child(5),
+  #PZ th:nth-child(6),
+  #PZ td:nth-child(6),
+  #AOX th:nth-child(3),
+  #AOX td:nth-child(3),
+  #AOX th:nth-child(5),
+  #AOX td:nth-child(5),
+  #AOX th:nth-child(6),
+  #AOX td:nth-child(6),
+  #Filters th:nth-child(4),
+  #Filters td:nth-child(4),
+  #Filters th:nth-child(5),
+  #Filters td:nth-child(5),
+  #SampleBottles th:nth-child(4),
+  #SampleBottles td:nth-child(4),
+  #SampleBottles th:nth-child(5),
+  #SampleBottles td:nth-child(5),
+  #BlockedStock th:nth-child(3),
+  #BlockedStock td:nth-child(3),
+  #BlockedStock th:nth-child(6),
+  #BlockedStock td:nth-child(6),
+  #Tote th,
+  #Tote td {
+    display: table-cell;
+  }
+}
+
+/* CUSTOM CHECKBOX FOR SEND AND RECEIVE COLUMNS */
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  /*CHECKBOX SIZE*/
+  padding-left: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1px solid;
+  left: 0px;
+  top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 0.4rem;
+  width: 1.25rem;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 0.4rem;
+  top: 0.3rem;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+/*=======================================================================
+MOBILE TABLET STYLING
+=======================================================================*/
+@media (orientation: portrait) {
+  /* REMOVE SOME SHAREPOINT ICONS TO CONDENSE PAGE */
+  #s4-titlerow,
+  #s4-ribbonrow,
+  #O365_MainLink_NavMenu,
+  #O365_MainLink_Settings,
+  #O365_MainLink_Help {
+    display: none !important;
+  }
+  /* CONDENSE 12A HTML CONTENT */
+  table th:nth-child(2) {
+    text-align: left;
+  }
+  #Options div:first-child,
+  section th,
+  section td,
+  .Contact {
+    display: none;
+  }
+  /* BUILD TABLE VIEW AND CORRECT STYLING */
+  section th:nth-child(1),
+  section th:nth-child(2),
+  section td:nth-child(1),
+  section td:nth-child(2),
+  #PZ th:nth-child(3),
+  #PZ td:nth-child(3),
+  #PZ th:nth-child(6),
+  #PZ td:nth-child(6),
+  #AOX th:nth-child(3),
+  #AOX td:nth-child(3),
+  #AOX th:nth-child(6),
+  #AOX td:nth-child(6),
+  #Filters th:nth-child(5),
+  #Filters td:nth-child(5),
+  #SampleBottles th:nth-child(5),
+  #SampleBottles td:nth-child(5),
+  #BlockedStock th:nth-child(3),
+  #BlockedStock td:nth-child(3),
+  #BlockedStock th:nth-child(6),
+  #BlockedStock td:nth-child(6),
+  #Tote th,
+  #Tote td {
+    display: table-cell;
+  }
+  #Options {
+    justify-content: flex-end;
+  }
+  input,
+  select {
+    padding: 1rem 0;
+  }
+}
+@media (min-height: 1200px) and (orientation: landscape) {
+  /* REMOVE SOME SHAREPOINT ICONS TO CONDENSE PAGE */
+  #s4-titlerow,
+  #s4-ribbonrow,
+  #O365_MainLink_NavMenu,
+  #O365_MainLink_Settings,
+  #O365_MainLink_Help {
+    display: none !important;
+  }
+  input,
+  select {
+    padding: 1rem 0;
+  }
+}
