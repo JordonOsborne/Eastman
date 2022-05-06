@@ -1,0 +1,206 @@
+/* SHAREPOINT PAGE STYLING */
+#s4-workspace {
+  overflow-x: hidden;
+}
+.ms-webpartzone-cell {
+  margin: 0;
+}
+.ms-h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* HTML HEADING STYLING */
+.Heading {
+  margin: 0;
+  padding: 5px 0;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  background: #0072c6;
+  color: white !important;
+}
+
+/* DYNAMIC FORM LINK STYLING */
+#Views {
+  display: flex;
+}
+.NotSelected,
+#Views h3 {
+  font-weight: normal;
+  color: #262626;
+  cursor: pointer;
+  background: none;
+}
+.Selected {
+  font-weight: bold !important;
+  color: #0072c6 !important;
+  cursor: pointer;
+  background: none;
+}
+.Selected:hover {
+  background: none;
+}
+.AddButton {
+  padding: 0.25rem 1rem;
+  border: none;
+  background-color: rgb(130, 175, 18);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.DeleteButton {
+  font-size: 1rem !important;
+  padding: 0.25rem !important;
+  min-width: 0 !important;
+  border: none !important;
+  color: rgb(175, 13, 18) !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.DeleteButton:hover,
+.AddButton:hover {
+  font-weight: bold;
+}
+.DeleteButton:hover {
+  background: none !important;
+}
+.Help {
+  border-radius: 50% !important;
+  background: #0072c6 !important;
+  color: #f4f4f4 !important;
+  min-width: 0 !important;
+  padding: 0.25rem 0.6rem !important;
+  cursor: pointer !important;
+  font-weight: bold;
+  border: none !important;
+  outline: none;
+}
+#DeliveryLinks,
+#GMNLinks,
+#HelpLink {
+  display: inline;
+  margin-left: 0.25rem;
+}
+.FormLink {
+  font-size: 1rem;
+  display: inline;
+  padding: 0.25rem 1rem;
+  margin-right: 0.25rem !important;
+  background: rgb(18, 105, 175) !important;
+  border-radius: 5px;
+  color: #f4f4f4 !important;
+  text-decoration: none;
+}
+.FormLink:hover,
+.FormLink:visited {
+  text-decoration: none;
+  background-color: rgba(18, 105, 175, 0.8) !important;
+  color: #f4f4f4 !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* AUTOCOMPLETE STYLING */
+.AutoCompleteList {
+  position: absolute;
+  background: #fff;
+  border: 1px solid;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 400px;
+  max-height: 150px;
+  overflow-x: auto;
+}
+.AutoCompleteList div {
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.AutoCompleteList div:hover,
+.AutoComplete-Active {
+  background-color: rgba(18, 105, 175, 0.3);
+}
+
+/* FORM STYLING */
+div.ms-webpart-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #999;
+}
+.ms-cor-tableNoSpace {
+  margin: auto;
+}
+div.ms-inputuserfield {
+  min-width: 275px;
+}
+.ms-core-tableNoSpace {
+  margin: auto;
+}
+.ms-formlabel {
+  padding-left: 15px;
+}
+#WebPartWPQ4 input[value="Save"],
+input[value="Cancel"]:first-child,
+input[value="OK"]:first-child,
+input[value="Close"]:first-child,
+input[value="SUBMIT"]:first-child,
+input[value="CANCEL"]:first-child,
+input[value="Next"],
+input[value="Previous"] {
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  background: #0072c6;
+  color: white;
+  transition: background 0.2s ease-in;
+}
+input[value="Save"]:hover,
+input[value="OK"]:hover,
+input[value="SUBMIT"]:hover,
+input[value="SUBMIT GMN REQUEST"]:hover,
+input[value="UPDATE GMN REQUEST"]:hover,
+input[value="Add"]:hover {
+  cursor: pointer;
+  background: rgb(130, 175, 18) !important;
+}
+input[value="Previous"]:hover,
+input[value="Next"]:hover,
+input[value="EDIT"]:hover,
+input[value="Print"]:hover {
+  cursor: pointer;
+  background: #888 !important;
+}
+input[value="Cancel"]:hover,
+input[value="Close"]:hover,
+input[value="CANCEL"]:hover {
+  cursor: pointer;
+  background: rgb(175, 13, 18) !important;
+  color: white !important;
+}
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+input[type="text"]:disabled,
+textarea:disabled,
+select:disabled {
+  color: #444 !important;
+  border: none;
+  background: none;
+  -webkit-appearance: none; /* HIDE DROP DOWN ARROW */
+  resize: none; /* HIDE TEXT AREA EXPANDER */
+}
