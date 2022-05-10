@@ -1,0 +1,331 @@
+/* FOCUS STATE REMOVAL FOR CHROME */
+*:focus{
+outline:none;
+}
+:Root{
+  --hover:rgba(153,153,153, 0.4);
+  --light-color: rgb(18,130,175);
+  --dark-color: rgb(18,105,175);
+  --submit-color: rgb(130,175,18);
+  }
+
+/* SHAREPOINT PAGE STYLING  */
+.ms-fullWidth{ /*Page Content*/
+  font-size: 1rem;
+}
+#contentRow{ /*Page Content NOT including Header*/
+  margin:0 5px;
+  padding-top:0;
+}
+.ms-webpartzone-cell{ /*Individual WebParts on Page*/
+  margin-bottom:0.25rem;
+  border-bottom:1px solid var(--light-color);
+}
+.ms-csrlistview-controldiv{
+  padding-bottom:0;
+}
+
+/* REMOVE UNNECESSARY SPACING FROM WEBPARTS */
+.ms-webpartPage-root{
+  border-spacing:0;
+  background: white;
+}
+.ms-webpart-chrome-title{
+	display:none;
+}
+  
+/* CALENDAR STYLING */
+.ms-acal-today{
+  text-decoration:none;
+  font-size:1.25rem;
+  background:rgb(18,130,175) !important;
+  color:white !important;
+}
+/* ==========================================================================
+HOME PAGE HTML STYLING
+========================================================================== */
+.Home .Container{
+	margin-bottom:0.75rem;
+}
+.Home .Heading{
+	margin-top:5px;
+	text-align:left;
+	font-size:1.5rem;
+	color:rgb(18,130,175);
+	border-bottom:2px solid rgb(18,105,175);
+}
+.Home .Heading:first-child{
+	margin-top:0;
+}
+.Home .Category{
+	min-width:175px;
+	max-width:200px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin:5px;
+}
+.Home .icon, .Home .icon:hover{
+	height:75px;
+	width:75px;
+	margin-top:10px;
+	box-shadow:none;
+}
+.Home .Title{
+	color:black;
+	text-transform:uppercase;
+	font-size:0.9rem;
+	margin:2px 0;
+	font-weight:bold;
+	text-decoration:none;
+}
+.Home .btn{
+	border-radius:5px;
+	border:1px solid;
+	margin-bottom:5px;
+	transition:box-shadow 0.2s ease-in;
+  height: 100%;
+}
+.Home .btn:hover{
+	box-shadow:-5px 5px 10px #222;
+	text-decoration:none;
+}
+.Home .Views{
+	min-width:175px;
+	max-width:175px;
+	display:flex;
+	flex-direction:column;
+	padding:0 5px;
+	text-align:left;
+}
+.Home .VIEW{
+	padding:5px;
+	color:black;
+	text-decoration:none;
+}
+.Home .VIEW:visited{
+	color:black;
+}
+.Home .VIEW:hover{
+	background:rgb(18,105,175);
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	border-radius:0 5px 5px 0;
+}
+.Home .NEW{
+	margin:0;
+	font-weight:bold;
+	font-size:0.9rem;
+}
+/* ==========================================================================
+TABS STYLING
+========================================================================== */
+/* .Menu{
+  max-width:80vw;
+} */
+#tabsContainer{
+  display: flex;
+  margin: 0.5rem 0 0 0;
+  border-bottom: #298CB8 2px solid;
+  width:100%;
+}
+.Tabs{
+  padding: 0.25rem 3rem;
+  text-align:center;
+  min-width: 10rem;
+  cursor: pointer;
+  color: #262626;
+  background:none;
+}
+.NotSelected{
+  color: #262626;
+  background:none;
+}
+.Selected{
+  color: white;
+  background: #298CB8;
+}
+.Tabs:hover{
+  color: white;
+  background: rgb(51,51,51);
+}
+.Selected:hover{
+  background: #298CB8;
+}
+
+/* ==========================================================================
+CUSTOM HTML STYLING
+========================================================================== */
+.Container{
+  display:flex;
+  padding:0;
+	margin:0;
+	flex:1;
+}
+.Container:last-child{
+  border-bottom:2px solid rgb(18,105,175);
+}
+.Container div{
+	text-align:center;
+	flex:1;
+}
+.Container div div{ 
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  text-align:left;
+  align-items:center;
+}
+.icon{
+  height:150px;
+  width:200px;
+  border-radius:10px;
+  box-shadow:-2px 0px 10px #222;
+}
+.icon:hover{
+	box-shadow:-5px 5px 10px #222;
+}
+.small-icon{
+	height:30px;
+	margin-right:5px;
+}
+.Container h2, .Container h3{
+  text-transform:uppercase;
+  color:rgb(18,130,175);
+}
+.NEW, .DEFAULT, .NAV{
+	margin-right:5px;
+	padding:5px 20px;
+	border-radius:5px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:rgb(130,175,18);
+	text-decoration:none !important;
+	text-transform:uppercase;
+	color:white !important;
+	font-weight:bold;
+	transition:background 0.3s ease-in-out;
+}
+.DEFAULT{
+	background:rgb(18,105,175);
+}
+.NAV{
+	background:white;
+	color:black !important;
+	font-weight:normal;
+	text-align:center;
+	flex:1;
+}
+.NEW:hover{
+	background:rgba(130, 175, 18, 0.8);
+}
+.DEFAULT:hover{
+	background:rgb(18,130,175)
+}
+.NAV:hover{
+	border-radius:0;
+	border-bottom:2px solid rgb(18,130,175);
+}
+.Page{
+	text-transform:uppercase;
+	text-align:center;
+}
+/* SEARCH BOX CORRECTION AND ADDITIONAL STYLING */
+.ms-InlineSearch-DivBaseline{
+  padding-left:10px;
+  border-radius:0 0 5px 5px;
+  background:#666;
+}
+.ms-InlineSearch-DivBaseline::before{
+  text-transform:uppercase;
+  color:white;
+  font-weight:bold;
+  float:left;
+  margin:10px 5px;
+}
+.ms-InlineSearch-Outline-Baseline{
+  padding:2px 0px 5px 5px;
+  margin:3px 0;
+  background:white;
+}
+
+/* ==========================================================================
+FOOTER STYLING
+========================================================================== */
+.FOOTER{
+	position:relative;
+	bottom: 5px;
+}
+
+.FOOTER .Container .Group{
+	display:flex;
+  flex-direction:column;
+}
+
+/*FOOTER BUTTON STYLING*/
+.F-Heading, .F-Heading:visited{
+  padding:5px;
+  font-size:1rem;
+  border-radius:5px 5px 0 0;
+  border-bottom:2px solid #1269AF;
+  max-width:none;
+	color:black;
+	text-decoration:none;
+}
+.SubLink, .SubLink:visited{
+  font-size:1rem;
+  padding:5px;
+	max-width:none;
+	color:black;
+}
+.F-Heading:hover{
+  cursor:pointer;
+  background:#1269AF;
+	color:white !important;
+	text-decoration:none;
+}
+
+/* MIS FOOTER TAG STYLING */
+.Footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  align-content:center;
+  background:rgb(198, 198, 198);
+}
+.FooterTag, .FooterTag:visited{
+  display:flex;
+  align-items:center;
+  font-size:1.5rem;
+	text-align:center;
+	color:black;
+	text-decoration:none;
+}
+.FooterTag .icon{
+  margin: 5px 10px;
+  height:45px;
+	width:45px;
+	box-shadow:none;
+}
+
+#printPage
+{
+  margin: 0px;
+  padding: 0px;
+  width: 670px; /* width: 7in; */
+  height: 900px; /* or height: 9.5in; */
+  clear: both;
+  background-color: gray;
+  page-break-after: always;
+}
+#cube
+{ 
+  position: relative;
+  top: 1in;
+  left: 1in;
+  width: 1in;
+  height: 1in;
+  background-color: white;
+}

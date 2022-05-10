@@ -1,0 +1,166 @@
+  /* PAGE WEBPART RESET */
+  #ViewNav{
+  padding:0px;
+  max-width:100vw;
+  width:100vw;
+}
+.ms-WPBody A:link, .ms-WPBody a:visited{
+  text-decoration:none;
+  color: black;
+}
+.ms-webpartPage-root{
+  border-spacing:0;
+}
+#contentRow{
+  padding:0;
+  max-width:100vh;
+}
+  /*HIDE SIDE NAV BAR AND ZERO MARGIN*/
+.s4-ca {
+  margin-left:0px !important; 
+  margin-right:0px !important;
+}
+#sideNavBox { 
+  display: none 
+}
+#contentBox{
+  margin-left: 0;
+  margin-right:0;
+}
+
+  /* PAGE STYLING */
+.BtnRow{
+  padding:0px;
+  margin:5px 0px;
+  display: flex;
+  align-content:center;
+  align-items:center;
+  justify-content: center;
+  flex:1;
+  list-style:none;
+}
+.BtnRow:last-child{
+  border-bottom:1px solid rgb(18,130,175);
+}
+.Heading{
+  list-style: none;
+  text-transform: uppercase;
+  justify-content:center;
+  align-items:center;
+  font-size:1.25rem;
+  color:rgb(18, 130, 175);
+  border-top:1px solid rgb(18, 130, 175) ;
+  border-bottom:2px solid #1269AF ;
+  width:100%;
+  margin:5px 0px 2px;
+  padding:2px 2.5vw;
+}
+.Mainbtn{
+  display:flex;
+  flex:1;
+  align-items:center;
+}
+.btn{
+  display:flex;
+  flex-direction:column;
+  /* align-items:center; */
+  flex:1;
+}
+.icon{
+  margin:5px 5px 5px;
+  border: none;
+  width:60px;
+  height:60px;
+}
+.Mainbtn .icon{
+  height:90px;
+  width:90px;
+}
+.SubRow{
+  display:flex;
+  flex:.75;
+  flex-direction:column;
+  margin-left:5px;
+  border-radius:0px 10px 10px 0px;
+}
+.View{
+  padding:2px 5px;
+  border-radius:0px 5px 5px 0px;
+  transition:padding 0.2s ease-in;
+}
+/*MENU BUTTON STYLING*/
+.Mainbtn a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:5px 0px;
+  border-radius:5px;
+  font-family:arial;
+  text-align:center;
+  font-size:1.25rem;
+  width:100%;
+  transition: background 0.2s ease-in;
+}
+.btn a{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin:0 2px;
+  padding-bottom:5px;
+  border-radius:5px;
+  font-family:arial;
+  text-align:center;
+  font-size:0.75rem;
+  width:100%;
+  max-width:200px;
+  transition: background 0.2s ease-in;
+}
+/* .Mainbtn a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background:rgba(18, 130, 175, 0.2);
+} */
+.btn a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background:rgba(18, 130, 175, 0.2);
+}
+.View:hover{
+  padding:2px 0px 2px 20px;
+  background:#1269AF;
+  color:white !important;
+}
+.NEW{
+  padding:5px 0;
+  border-radius:0 0 5px 5px !important;
+  background: #1269AF;
+  color:white !important;
+  font-weight:bold;
+  max-width:200px;
+}
+.NEW:hover{
+  background:rgb(130,175,18) !important;
+  color:white !important;
+  border:none !important;
+}
+@media (max-width:1000px){
+  #sideNavBox { 
+    display: none 
+  }
+  #contentRow{
+    padding-top:0;
+  }
+  #contentBox{ 
+    margin-left: 1%;
+  }
+  #ViewNav{
+    min-width:1000px;
+  }
+  .ms-fullWidth{
+    min-width:1000px;
+  }
+  .ms-tableCell{
+    display:block;
+  }
+}
