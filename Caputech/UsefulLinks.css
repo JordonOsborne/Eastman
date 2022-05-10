@@ -1,0 +1,42 @@
+#Home fieldset {
+  margin-bottom: 1rem;
+}
+
+#Home fieldset legend {
+  background: #3f8528;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem;
+  width: 250px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+#Home .Links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  width: 90vw;
+}
+
+#Home .Links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  width: 250px;
+}
+#Home .Links .link:last-child {
+  margin-right: 0;
+}
+#Home .Links .link:hover {
+  border: 2px solid #3f8528;
+  text-decoration: none;
+}
+
+#Home .Links .link img {
+  height: 50px;
+}

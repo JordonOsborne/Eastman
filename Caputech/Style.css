@@ -1,0 +1,50 @@
+/* CHANGE DEFAULT E-LOG STYLING */
+#contentRow {
+  padding-top: 0;
+}
+.ms-webpartzone-cell {
+  margin-bottom: 10px;
+}
+/* MENU WEBPART STYLING */
+.Menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+/*LOG ENTRY BUTTON STYLING*/
+.LogEntry,
+.LogEntry:visited {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-right: 1em solid rgb(255, 255, 255);
+  background-color: #3f8528;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  min-width: 150px;
+  flex: 1;
+}
+.LogEntry span {
+  display: block;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.LogEntry:hover {
+  background: #306e1b;
+}
+.LogEntry .icon {
+  border: none;
+  height: 1.5rem;
+  margin-right: 1em;
+}
+.LogEntry:last-child {
+  border: none;
+  margin-right: none;
+}
