@@ -4,4 +4,4 @@ Customized Buttons for home page for easy form submissions.
 
 ## Useful Links Page - Published 5/1/2022
 HTML/CSS inserted into Content Editor Webpart for links to external resources.
-![Caputech Useful Links](C:\Users\u773352\Downloads\Caputech\CaputechUsefulLinks.png)
+![Caputech Useful Links](https://github.com/JordonOsborne/Eastman/blob/main/Caputech/CaputechUsefulLinks.png)
